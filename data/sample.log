@@ -1,0 +1,6 @@
+2026-02-03 09:01:12 INFO app Started successfully
+2026-02-03 09:02:10 WARNING db Slow query detected: 1200ms
+2026-02-03 09:03:45 ERROR auth Failed login for user=sonja ip=10.2.3.4
+2026-02-03 09:04:11 CRITICAL api Service unavailable code=503 endpoint=/payments
+2026-02-03 09:04:50 INFO app Health check ok
+2026-02-03 09:05:10 ERROR disk Low space on /dev/sda1 percent=95
