@@ -1,0 +1,21 @@
+[Unit]
+Description=Log Monitor Alert System (Python)
+After=network.target
+
+[Service]
+Type=simple
+User=kithmini
+
+WorkingDirectory=/home/kithmini/projects/log-monitor-alert-system
+
+ExecStart=/home/kithmini/projects/log-monitor-alert-system/.venv/bin/python \
+/home/kithmini/projects/log-monitor-alert-system/src/log_monitor.py \
+--log /home/kithmini/projects/log-monitor-alert-system/data/sample.log \
+--watch --interval 10 --email --smtp-tls
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
