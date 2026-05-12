@@ -37,10 +37,14 @@ via email and Telegram.
 
 ## Project Structure
 
+## Project Structure
+
+```
 log-monitor-alert-system/
 ├── src/
 │   ├── log_monitor.py
 │   └── ai/
+│       ├── __init__.py
 │       ├── ai_analyser.py
 │       ├── error_extractor.py
 │       ├── report_builder.py
@@ -48,10 +52,12 @@ log-monitor-alert-system/
 ├── data/
 │   └── sample.log
 ├── systemd/
+│   └── log-monitor.service
 ├── test_ai_pipeline.py
 ├── requirements.txt
-└── .env.example
-
+├── .env.example
+└── README.md
+```
 ## Setup
 
 git clone https://github.com/Kith-mini/log-monitor-alert-system.git
@@ -59,14 +65,6 @@ cd log-monitor-alert-system
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
-## Environment Variables
-
-ANTHROPIC_API_KEY=sk-ant-...
-TELEGRAM_BOT_TOKEN=your_token
-TELEGRAM_CHAT_ID=your_chat_id
-EMAIL_USER=you@gmail.com
-EMAIL_PASS=your_app_password
 
 ## Run Project
 
