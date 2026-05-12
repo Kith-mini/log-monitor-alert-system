@@ -4,3 +4,20 @@
 2026-02-03 09:04:11 CRITICAL api Service unavailable code=503 endpoint=/payments
 2026-02-03 09:04:50 INFO app Health check ok
 2026-02-03 09:05:10 ERROR disk Low space on /dev/sda1 percent=95
+2026-02-06 10:30:00 ERROR TEST New critical problem
+2026-02-06 15:30:00 ERROR Dashboard Test Event
+2026-02-06 15:30:00 ERROR Dashboard Test Event
+2026-02-06 15:30:00 ERROR Dashboard Test Event
+2026-02-06 15:30:00 ERROR Dashboard Test Event
+2026-02-06 16:30:00 ERROR Test From Sonja
+2026-02-06 16:45:00 ERROR Kithmini System test
+
+
+cat > data/sample.log << 'EOF'
+2026-02-06 16:50:00 INFO Application started
+2026-02-06 16:51:10 ERROR Database connection failed
+2026-02-06 16:52:05 CRITICAL Payment service down
+2026-02-06 16:53:22 WARNING Disk usage high
+EOF
+2026-02-06 16:55:00 ERROR Login failed user=sonja
+2026-02-06 16:55:00 ERROR Login failed user=Kithmini

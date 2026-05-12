@@ -6,3 +6,10 @@ __pycache__/
 reports/*.json
 reports/*.md
 data/state.json
+image.png
+create_latest.sh
+reports/
+data/reports/
+data/.monitor_state.json
+log-monitor-alert-system/
+.venv/
