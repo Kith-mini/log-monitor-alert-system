@@ -39,6 +39,11 @@ def main():
     report = build_ai_report(FAKE_ERRORS, diagnosis)
     print(report[:800] + "\n…[truncated]" if len(report) > 800 else report)
 
+    print("\n── Step 3: Sending to Telegram ──────────────────────────────────")
+    from ai.telegram_notifier import send
+    send(report)
+    print("  Telegram dispatch complete.")
+
     print("\n── Smoke test PASSED ────────────────────────────────────────────")
 
 if __name__ == "__main__":
